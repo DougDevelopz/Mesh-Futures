@@ -17,7 +17,7 @@ public class MeshScheduler {
     public MeshScheduler(int cores) {
         this.taskService = Executors.newCachedThreadPool(r -> {
             Thread thread = new Thread(r);
-            thread.setName("Jamun Task Service");
+            thread.setName("Mesh Task Service");
             thread.setDaemon(true);
             return thread;
         });
@@ -33,13 +33,6 @@ public class MeshScheduler {
             tasks.cancel();
         }
     }
-
-    /**
-     * Shuts down the Jamun scheduler.
-     *
-     * @return {@code true} if all tasks finished, {@code false} otherwise
-     * @throws InterruptedException if the current thread was interrupted
-     */
     public boolean shutdown() throws InterruptedException {
         Collection<MeshScheduledTask> terminating = null;
         synchronized (scheduledTasks) {
