@@ -15,7 +15,7 @@ public class MeshFutures {
      * @param <T> is the resul type
      * @return a new Promise
      */
-    public <T> Promise<T> createNew() {
+    public static <T> Promise<T> createNew() {
         return new Promise<>();
     }
 
@@ -29,7 +29,7 @@ public class MeshFutures {
      * @param <T>             the result type
      * @return a callable to submit
      */
-    public <T> AdherentFuture<T> submit(Callable<T> call, AdherentFuture.SuccessfulListener<T> successful, AdherentFuture.ThrowableListener throwable
+    public static  <T> AdherentFuture<T> submit(Callable<T> call, AdherentFuture.SuccessfulListener<T> successful, AdherentFuture.ThrowableListener throwable
             , ExecutorService executorService) {
 
         AdherentFuture<T> adherableFuture = AdherentFuture.create(successful, throwable, executorService);
@@ -52,7 +52,7 @@ public class MeshFutures {
      * @param <T>        the result type
      * @return a callable to submit through cached threads
      */
-    public <T> AdherentFuture<T> submit(Callable<T> call, AdherentFuture.SuccessfulListener<T> successful, AdherentFuture.ThrowableListener throwable) {
+    public static <T> AdherentFuture<T> submit(Callable<T> call, AdherentFuture.SuccessfulListener<T> successful, AdherentFuture.ThrowableListener throwable) {
         return submit(call, successful, throwable, Executors.newCachedThreadPool());
     }
 }
