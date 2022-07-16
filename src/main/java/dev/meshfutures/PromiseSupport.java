@@ -1,4 +1,4 @@
-package dev.mesh.future.future;
+package dev.meshfutures;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;

@@ -1,7 +1,7 @@
-package dev.mesh.future.future.access;
+package dev.meshfutures.access;
 
-import dev.mesh.future.future.AdherentFuture;
-import dev.mesh.future.future.Promise;
+import dev.meshfutures.AdherentFuture;
+import dev.meshfutures.Promise;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
