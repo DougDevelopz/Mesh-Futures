@@ -13,7 +13,7 @@ MeshSchedulerMain.class contains an example of a simple countdown 10 to 0 using 
 
 You can install it and place it inside your libraries folder for whatever IDE you use to access what the API has to offer.
 
-For the install portion the Mesh-Tests (examples) module was removed. It will appear / stay here on the repo for new users to access if needed
+For the install portion the Mesh-Test (examples) module was removed. It will appear / stay here on the repo for new users to access if needed
 
 
 
