@@ -8,7 +8,7 @@ methods in the MeshFuturesMain class.
 
 MeshSchedulerMain.class contains an example of a simple countdown 10 to 0 using .repeat and .cancel featured in the class.
 
-##Install
+### Install
 
 You can install it and place it inside your libraries folder for whatever IDE you use to access what the API has to offer.
 
