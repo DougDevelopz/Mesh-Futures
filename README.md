@@ -4,7 +4,7 @@ Mesh Futures is a hands on tasking library that allows you to carry out your tas
 
 ### How To Use?
 
-Mesh-Test contains two main classes that shows you how to acess Mesh Futures Promise API, and Listenable Future with its successfu and failing 
+Mesh-Test contains two main classes that shows you how to acess Mesh Futures Promise API, and Listenable Future with its successful and failing 
 methods in the MeshFuturesMain class.
 
 MeshSchedulerMain.class contains an example of a simple countdown 10 to 0 using .repeat and .cancel featured in the class.
